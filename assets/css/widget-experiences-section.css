@@ -1,0 +1,240 @@
+body{
+    margin: 0;
+}
+
+.experiences-section h1,
+.experiences-section h2,
+.experiences-section h3,
+.experiences-section h4,
+.experiences-section h5,
+.experiences-section h6 {
+    font-family: "Fjalla One", sans-serif;
+}
+.experiences-section p,
+.experiences-section a{
+    font-family: "Tahoma", Sans-serif;
+}
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    align-items: unset;
+    background-color: #AE3427;
+}
+.img-option-card p {
+    font-size: 18px;
+}
+.experiences-section {
+    width: 70%;
+    color: white;
+    display: flex;
+    justify-content: end;
+}
+.experiences-section-child {
+    width: 80%;
+    color: white;
+    padding: 7rem 0rem;
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    max-width: 800px;
+}
+.experiences-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.experiences-section p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.image-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.image-options img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px !important;
+    transition: transform 0.3s ease;
+    aspect-ratio: 9/16;
+}
+.img-option-card{
+    text-align: center;
+}
+.img-option-card p{
+    margin: 10px 0 0 0 ;
+}
+.image-options img:hover {
+    transform: scale(1.05);
+}
+
+.large-image-section {
+    width: 40%;
+    min-height: 100% !important;
+    display: flex;
+    background: black;
+    align-items: end;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.large-image-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #00000052;
+    z-index: 0;
+    width: 100%;
+}
+.large-image-section img {
+    width: 100%;
+    height: auto;
+
+}
+.active-image-card{
+    position: relative;
+}
+.active-image-content {
+    position: relative;
+    bottom: 0;
+    text-align: left;
+    color: white;
+    width: 100%;
+    padding: 6rem 2rem;
+}
+.active-image-content .active-image-btn{
+    padding: 0;
+    background: none;
+    border: none;
+    color: white;
+}
+.active-image-btn a {
+    color: inherit !important;
+}
+
+
+.image-options-slider {
+    margin: 0 auto;
+    /* width: 80%; Adjust width as needed */
+}
+
+.img-option-card {
+    padding: 15px;
+    text-align: center;
+}
+
+.slick-slide img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slick-prev, .slick-next {
+    color: #333; /* Change the color of the navigation arrows */
+    z-index: 1;
+}
+
+h4.experiences-post-title {
+    margin-top: 1.5rem;
+    font-size: 18px;
+}
+h2.experiences-title {
+    font-size: 50px;
+}
+
+.slick-dots li button:before {
+    color: #ffffff !important;
+}
+.slick-dots li.slick-active button:before {
+    color: white !important;
+}
+h2.experiences-title {
+    color: white;
+}
+h4.experiences-post-title {
+    color: white;
+}
+h2.active-image-heading {
+    color: white;
+}
+
+@media only screen and (min-width: 1600px) {
+    .experiences-section {
+        justify-content: start !important;
+    }
+    .experiences-section-child {
+        margin-right: 0px  !important; 
+        /* margin-left: calc((100vw - 1440px)/2 ) !important; */
+    }    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1600px) {
+    .experiences-section {
+        justify-content: start !important;
+    }
+    .experiences-section-child {
+        margin-right: 0px  !important; 
+        /* margin-left: 4rem !important; */
+    }    
+}
+
+@media only screen and (max-width: 1250px) {
+    .experiences-section {
+        width: 60%;
+    }
+    .large-image-section {
+        width: 40%;
+    }    
+}
+@media only screen and (max-width: 767px) {
+    .container-fluid {
+        flex-direction: column;
+    }    
+    .slick-slide {
+        height: 400px;
+    }
+    .experiences-section {
+        width: 100%;
+    }        
+    .large-image-section {
+        width: 100%;
+    }    
+    .experiences-section-child {
+        padding-bottom: 2rem;
+    }
+    .large-image-section {
+        min-height: 400px !important;
+    }
+    .active-image-content {
+        padding-bottom: 3rem;
+    }      
+    .experiences-section {
+        justify-content: start !important;
+    }
+    .experiences-section-child {
+        margin-right: auto  !important;
+        margin-left: auto !important;
+        width: 90vw;
+    }  
+    .image-options-slider.image-options.slick-initialized.slick-slider.slick-dotted {
+        width: 93%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .experiences-section {
+        justify-content: start !important;
+    }
+    .experiences-section-child {
+        width: 88vw;
+    } 
+}

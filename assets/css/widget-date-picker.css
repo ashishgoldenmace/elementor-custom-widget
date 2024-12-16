@@ -1,0 +1,27 @@
+        /* Remove the input field border */
+        .datepicker {
+            border: none !important;
+            padding: 5px !important;
+            font-size: 16px;
+            width: 150px !important;
+            outline: unset !important;
+            cursor: pointer !important;
+            text-align: center;
+        }
+        /* Placeholder color */
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: inherit !important;
+        }
+        ::-moz-placeholder { /* Firefox 19+ */
+            color: inherit !important;
+        }
+        :-ms-input-placeholder { /* IE 10+ */
+            color: inherit !important;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+            color: inherit !important;
+        }
+        .datepicker::placeholder {
+            color: inherit !important;
+            opacity: 1; /* Firefox */
+          }        
